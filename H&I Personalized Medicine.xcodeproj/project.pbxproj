@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8004D4428A35A3E00D99B56 /* ProvidedServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8004D4328A35A3E00D99B56 /* ProvidedServicesView.swift */; };
+		C807129828A59FED00017B97 /* ConditionsTreatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807129728A59FED00017B97 /* ConditionsTreatedView.swift */; };
+		C831EF542A6082580057E41B /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF532A6082580057E41B /* LogInView.swift */; };
+		C831EF582A60BBC40057E41B /* NewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF572A60BBC40057E41B /* NewAccountView.swift */; };
+		C831EF5A2A60BED10057E41B /* PatientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF592A60BED10057E41B /* PatientsView.swift */; };
+		C831EF5C2A60C2720057E41B /* InviteNewPatientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF5B2A60C2720057E41B /* InviteNewPatientView.swift */; };
+		C831EF5E2A61EF7E0057E41B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF5D2A61EF7E0057E41B /* SettingsView.swift */; };
+		C831EF622A61F3220057E41B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C831EF612A61F3210057E41B /* GoogleService-Info.plist */; };
+		C831EF652A61F3A20057E41B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C831EF642A61F3A20057E41B /* FirebaseAuth */; };
+		C831EF672A61F3A20057E41B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C831EF662A61F3A20057E41B /* FirebaseDatabase */; };
+		C831EF692A61F3A20057E41B /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C831EF682A61F3A20057E41B /* FirebaseDatabaseSwift */; };
+		C831EF6B2A61F3A20057E41B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C831EF6A2A61F3A20057E41B /* FirebaseFirestore */; };
+		C831EF6D2A61F3A20057E41B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C831EF6C2A61F3A20057E41B /* FirebaseFirestoreSwift */; };
+		C831EF6F2A61F3A20057E41B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C831EF6E2A61F3A20057E41B /* FirebaseStorage */; };
+		C831EF712A61F8540057E41B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF702A61F8540057E41B /* AuthViewModel.swift */; };
+		C831EF732A6383340057E41B /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF722A6383340057E41B /* ForgotPasswordView.swift */; };
+		C831EF752A63AB3A0057E41B /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF742A63AB3A0057E41B /* UsersViewModel.swift */; };
+		C831EF772A658E5E0057E41B /* SettingsView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF762A658E5E0057E41B /* SettingsView2.swift */; };
+		C831EF7B2A6617C70057E41B /* PatientProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF7A2A6617C70057E41B /* PatientProfile.swift */; };
+		C831EF7D2A68A37D0057E41B /* PatientTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF7C2A68A37D0057E41B /* PatientTrackingView.swift */; };
+		C831EF7F2A68A5B60057E41B /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF7E2A68A5B60057E41B /* Tracking.swift */; };
+		C831EF852A6992410057E41B /* TrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF842A6992410057E41B /* TrackingViewModel.swift */; };
+		C831EF872A69F2040057E41B /* WaterLogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF862A69F2040057E41B /* WaterLogsView.swift */; };
+		C831EF892A69F3000057E41B /* AddWaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF882A69F3000057E41B /* AddWaterView.swift */; };
+		C831EF8B2A6A03130057E41B /* WaterLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF8A2A6A03130057E41B /* WaterLogViewModel.swift */; };
+		C832177D283083C3004F82BC /* H_I_Personalized_MedicineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C832177C283083C3004F82BC /* H_I_Personalized_MedicineApp.swift */; };
+		C832177F283083C3004F82BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C832177E283083C3004F82BC /* ContentView.swift */; };
+		C8321781283083C4004F82BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8321780283083C4004F82BC /* Assets.xcassets */; };
+		C8321784283083C4004F82BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8321783283083C4004F82BC /* Preview Assets.xcassets */; };
+		C832178E283083C4004F82BC /* H_I_Personalized_MedicineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C832178D283083C4004F82BC /* H_I_Personalized_MedicineTests.swift */; };
+		C8321798283083C4004F82BC /* H_I_Personalized_MedicineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8321797283083C4004F82BC /* H_I_Personalized_MedicineUITests.swift */; };
+		C832179A283083C4004F82BC /* H_I_Personalized_MedicineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8321799283083C4004F82BC /* H_I_Personalized_MedicineUITestsLaunchTests.swift */; };
+		C83217A828308498004F82BC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83217A728308498004F82BC /* Home.swift */; };
+		C84D49DF28375D72004CAC75 /* ServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84D49DE28375D72004CAC75 /* ServicesModel.swift */; };
+		C84D49E1283762DE004CAC75 /* ServicesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84D49E0283762DE004CAC75 /* ServicesList.swift */; };
+		C84D49E4283764EC004CAC75 /* DetailServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84D49E3283764EC004CAC75 /* DetailServicesView.swift */; };
+		C84D49E6283769AA004CAC75 /* ServicesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84D49E5283769AA004CAC75 /* ServicesCard.swift */; };
+		C859FD432A6F385700D9D712 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD422A6F385700D9D712 /* ChatView.swift */; };
+		C859FD452A6F3C0000D9D712 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD442A6F3C0000D9D712 /* MessageView.swift */; };
+		C859FD472A6F3D0800D9D712 /* RecentChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD462A6F3D0800D9D712 /* RecentChatView.swift */; };
+		C859FD492A6F92B100D9D712 /* PatientMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD482A6F92B100D9D712 /* PatientMessageView.swift */; };
+		C859FD4B2A72F3EB00D9D712 /* CKChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD4A2A72F3EB00D9D712 /* CKChatMessage.swift */; };
+		C859FD4F2A73379F00D9D712 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD4E2A73379F00D9D712 /* NotificationManager.swift */; };
+		C874605B2865294D0006C53A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874605A2865294D0006C53A /* LocationManager.swift */; };
+		C889CD70283090B6002B71D2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C889CD6F283090B6002B71D2 /* TabBar.swift */; };
+		C889CD7228309125002B71D2 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C889CD7128309125002B71D2 /* AboutUsView.swift */; };
+		C889CD7428309131002B71D2 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C889CD7328309131002B71D2 /* ServicesView.swift */; };
+		C889CD7828309152002B71D2 /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C889CD7728309152002B71D2 /* ContactUsView.swift */; };
+		C8940690289F5824004FBCEB /* FaqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C894068F289F5824004FBCEB /* FaqView.swift */; };
+		C89B2123286F4EC60090B5E0 /* AppReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89B2122286F4EC60090B5E0 /* AppReviewRequest.swift */; };
+		C8A31AA129334E93005F1F19 /* IndividualProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A31AA029334E93005F1F19 /* IndividualProductView.swift */; };
+		C8A45DCB2906DCB90054071F /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A45DCA2906DCB90054071F /* PaymentButton.swift */; };
+		C8A45DCD2906E5490054071F /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A45DCC2906E5490054071F /* PaymentHandler.swift */; };
+		C8A45DCF290700D00054071F /* ProductDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A45DCE290700D00054071F /* ProductDetailedView.swift */; };
+		C8A7FA6329C3CD7E002CBF99 /* VisitStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A7FA6229C3CD7E002CBF99 /* VisitStoreView.swift */; };
+		C8B0B38B2835DE5D0064BCF4 /* ContactUsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0B38A2835DE5D0064BCF4 /* ContactUsForm.swift */; };
+		C8B0BB692840496B00582347 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0BB682840496B00582347 /* ImagePicker.swift */; };
+		C8C3A5B52A5A1B1B00D3EAD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C3A5B42A5A1B1B00D3EAD7 /* NetworkManager.swift */; };
+		C8C3A5B72A5A205C00D3EAD7 /* AiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C3A5B62A5A205C00D3EAD7 /* AiView.swift */; };
+		C8D146012A6EC932003EE77E /* WeightEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D146002A6EC932003EE77E /* WeightEntryView.swift */; };
+		C8D146032A6ECEBB003EE77E /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D146022A6ECEBB003EE77E /* TrackingView.swift */; };
+		C8D3CD86285576A1000BD7FC /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D3CD85285576A1000BD7FC /* SupportEmail.swift */; };
+		C8D9061E29025AD800DB1B40 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9061D29025AD700DB1B40 /* Product.swift */; };
+		C8D9062029025C1E00DB1B40 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9061F29025C1E00DB1B40 /* ProductCard.swift */; };
+		C8D9062229025FF500DB1B40 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9062129025FF500DB1B40 /* StoreView.swift */; };
+		C8D906242902622C00DB1B40 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D906232902622C00DB1B40 /* CartButton.swift */; };
+		C8D90626290263BC00DB1B40 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D90625290263BC00DB1B40 /* CartView.swift */; };
+		C8D9062A2903502600DB1B40 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D906292903502600DB1B40 /* CartManager.swift */; };
+		C8D9062C2903527200DB1B40 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9062B2903527200DB1B40 /* ProductRow.swift */; };
+		C8DF0BB6283C7EFC00374ACF /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DF0BB5283C7EFC00374ACF /* Extentions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C832178A283083C4004F82BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8321771283083C3004F82BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8321778283083C3004F82BC;
+			remoteInfo = "H&I Personalized Medicine";
+		};
+		C8321794283083C4004F82BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8321771283083C3004F82BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8321778283083C3004F82BC;
+			remoteInfo = "H&I Personalized Medicine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8004D4328A35A3E00D99B56 /* ProvidedServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidedServicesView.swift; sourceTree = "<group>"; };
+		C807129728A59FED00017B97 /* ConditionsTreatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsTreatedView.swift; sourceTree = "<group>"; };
+		C80D6401285941C000107C0B /* H-I-Personalized-Medicine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "H-I-Personalized-Medicine-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C831EF532A6082580057E41B /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		C831EF572A60BBC40057E41B /* NewAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountView.swift; sourceTree = "<group>"; };
+		C831EF592A60BED10057E41B /* PatientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsView.swift; sourceTree = "<group>"; };
+		C831EF5B2A60C2720057E41B /* InviteNewPatientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteNewPatientView.swift; sourceTree = "<group>"; };
+		C831EF5D2A61EF7E0057E41B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C831EF612A61F3210057E41B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C831EF702A61F8540057E41B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		C831EF722A6383340057E41B /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		C831EF742A63AB3A0057E41B /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		C831EF762A658E5E0057E41B /* SettingsView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView2.swift; sourceTree = "<group>"; };
+		C831EF7A2A6617C70057E41B /* PatientProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfile.swift; sourceTree = "<group>"; };
+		C831EF7C2A68A37D0057E41B /* PatientTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTrackingView.swift; sourceTree = "<group>"; };
+		C831EF7E2A68A5B60057E41B /* Tracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracking.swift; sourceTree = "<group>"; };
+		C831EF842A6992410057E41B /* TrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewModel.swift; sourceTree = "<group>"; };
+		C831EF862A69F2040057E41B /* WaterLogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterLogsView.swift; sourceTree = "<group>"; };
+		C831EF882A69F3000057E41B /* AddWaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWaterView.swift; sourceTree = "<group>"; };
+		C831EF8A2A6A03130057E41B /* WaterLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterLogViewModel.swift; sourceTree = "<group>"; };
+		C8321779283083C3004F82BC /* H&I Personalized Medicine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H&I Personalized Medicine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C832177C283083C3004F82BC /* H_I_Personalized_MedicineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H_I_Personalized_MedicineApp.swift; sourceTree = "<group>"; };
+		C832177E283083C3004F82BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8321780283083C4004F82BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8321783283083C4004F82BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8321789283083C4004F82BC /* H&I Personalized MedicineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "H&I Personalized MedicineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C832178D283083C4004F82BC /* H_I_Personalized_MedicineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H_I_Personalized_MedicineTests.swift; sourceTree = "<group>"; };
+		C8321793283083C4004F82BC /* H&I Personalized MedicineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "H&I Personalized MedicineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8321797283083C4004F82BC /* H_I_Personalized_MedicineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H_I_Personalized_MedicineUITests.swift; sourceTree = "<group>"; };
+		C8321799283083C4004F82BC /* H_I_Personalized_MedicineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H_I_Personalized_MedicineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C83217A728308498004F82BC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C8379324289D772200AF70BC /* H&I Personalized Medicine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "H&I Personalized Medicine.entitlements"; sourceTree = "<group>"; };
+		C84D49DE28375D72004CAC75 /* ServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesModel.swift; sourceTree = "<group>"; };
+		C84D49E0283762DE004CAC75 /* ServicesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesList.swift; sourceTree = "<group>"; };
+		C84D49E3283764EC004CAC75 /* DetailServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailServicesView.swift; sourceTree = "<group>"; };
+		C84D49E5283769AA004CAC75 /* ServicesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCard.swift; sourceTree = "<group>"; };
+		C859FD422A6F385700D9D712 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		C859FD442A6F3C0000D9D712 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		C859FD462A6F3D0800D9D712 /* RecentChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatView.swift; sourceTree = "<group>"; };
+		C859FD482A6F92B100D9D712 /* PatientMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMessageView.swift; sourceTree = "<group>"; };
+		C859FD4A2A72F3EB00D9D712 /* CKChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKChatMessage.swift; sourceTree = "<group>"; };
+		C859FD4E2A73379F00D9D712 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C874605A2865294D0006C53A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C889CD6F283090B6002B71D2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		C889CD7128309125002B71D2 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		C889CD7328309131002B71D2 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		C889CD7728309152002B71D2 /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
+		C894068F289F5824004FBCEB /* FaqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqView.swift; sourceTree = "<group>"; };
+		C89B2122286F4EC60090B5E0 /* AppReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewRequest.swift; sourceTree = "<group>"; };
+		C8A31AA029334E93005F1F19 /* IndividualProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualProductView.swift; sourceTree = "<group>"; };
+		C8A45DCA2906DCB90054071F /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		C8A45DCC2906E5490054071F /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		C8A45DCE290700D00054071F /* ProductDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailedView.swift; sourceTree = "<group>"; };
+		C8A7FA6229C3CD7E002CBF99 /* VisitStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitStoreView.swift; sourceTree = "<group>"; };
+		C8B0B38A2835DE5D0064BCF4 /* ContactUsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsForm.swift; sourceTree = "<group>"; };
+		C8B0BB682840496B00582347 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C8C3A5B42A5A1B1B00D3EAD7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C8C3A5B62A5A205C00D3EAD7 /* AiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiView.swift; sourceTree = "<group>"; };
+		C8D146002A6EC932003EE77E /* WeightEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntryView.swift; sourceTree = "<group>"; };
+		C8D146022A6ECEBB003EE77E /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
+		C8D3CD85285576A1000BD7FC /* SupportEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
+		C8D9061D29025AD700DB1B40 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C8D9061F29025C1E00DB1B40 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		C8D9062129025FF500DB1B40 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		C8D906232902622C00DB1B40 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		C8D90625290263BC00DB1B40 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		C8D906292903502600DB1B40 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		C8D9062B2903527200DB1B40 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		C8DF0BB5283C7EFC00374ACF /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8321776283083C3004F82BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C831EF692A61F3A20057E41B /* FirebaseDatabaseSwift in Frameworks */,
+				C831EF672A61F3A20057E41B /* FirebaseDatabase in Frameworks */,
+				C831EF6B2A61F3A20057E41B /* FirebaseFirestore in Frameworks */,
+				C831EF6F2A61F3A20057E41B /* FirebaseStorage in Frameworks */,
+				C831EF652A61F3A20057E41B /* FirebaseAuth in Frameworks */,
+				C831EF6D2A61F3A20057E41B /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8321786283083C4004F82BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8321790283083C4004F82BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8321770283083C3004F82BC = {
+			isa = PBXGroup;
+			children = (
+				C832177B283083C3004F82BC /* H&I Personalized Medicine */,
+				C832178C283083C4004F82BC /* H&I Personalized MedicineTests */,
+				C8321796283083C4004F82BC /* H&I Personalized MedicineUITests */,
+				C832177A283083C3004F82BC /* Products */,
+				C8379325289D774000AF70BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C832177A283083C3004F82BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8321779283083C3004F82BC /* H&I Personalized Medicine.app */,
+				C8321789283083C4004F82BC /* H&I Personalized MedicineTests.xctest */,
+				C8321793283083C4004F82BC /* H&I Personalized MedicineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C832177B283083C3004F82BC /* H&I Personalized Medicine */ = {
+			isa = PBXGroup;
+			children = (
+				C8379324289D772200AF70BC /* H&I Personalized Medicine.entitlements */,
+				C80D6401285941C000107C0B /* H-I-Personalized-Medicine-Info.plist */,
+				C831EF612A61F3210057E41B /* GoogleService-Info.plist */,
+				C84D49E22837649D004CAC75 /* Detail */,
+				C84D49DD28375D66004CAC75 /* Models */,
+				C889CD6C28309040002B71D2 /* Components */,
+				C83217A628308440004F82BC /* Views */,
+				C832177C283083C3004F82BC /* H_I_Personalized_MedicineApp.swift */,
+				C8321780283083C4004F82BC /* Assets.xcassets */,
+				C8321782283083C4004F82BC /* Preview Content */,
+				C8DF0BB5283C7EFC00374ACF /* Extentions.swift */,
+				C8D906292903502600DB1B40 /* CartManager.swift */,
+				C8A45DCC2906E5490054071F /* PaymentHandler.swift */,
+			);
+			path = "H&I Personalized Medicine";
+			sourceTree = "<group>";
+		};
+		C8321782283083C4004F82BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8321783283083C4004F82BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C832178C283083C4004F82BC /* H&I Personalized MedicineTests */ = {
+			isa = PBXGroup;
+			children = (
+				C832178D283083C4004F82BC /* H_I_Personalized_MedicineTests.swift */,
+			);
+			path = "H&I Personalized MedicineTests";
+			sourceTree = "<group>";
+		};
+		C8321796283083C4004F82BC /* H&I Personalized MedicineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8321797283083C4004F82BC /* H_I_Personalized_MedicineUITests.swift */,
+				C8321799283083C4004F82BC /* H_I_Personalized_MedicineUITestsLaunchTests.swift */,
+			);
+			path = "H&I Personalized MedicineUITests";
+			sourceTree = "<group>";
+		};
+		C83217A628308440004F82BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C832177E283083C3004F82BC /* ContentView.swift */,
+				C83217A728308498004F82BC /* Home.swift */,
+				C8C3A5B62A5A205C00D3EAD7 /* AiView.swift */,
+				C889CD7128309125002B71D2 /* AboutUsView.swift */,
+				C889CD7328309131002B71D2 /* ServicesView.swift */,
+				C889CD7728309152002B71D2 /* ContactUsView.swift */,
+				C8B0B38A2835DE5D0064BCF4 /* ContactUsForm.swift */,
+				C89B2122286F4EC60090B5E0 /* AppReviewRequest.swift */,
+				C894068F289F5824004FBCEB /* FaqView.swift */,
+				C8004D4328A35A3E00D99B56 /* ProvidedServicesView.swift */,
+				C807129728A59FED00017B97 /* ConditionsTreatedView.swift */,
+				C8D9062129025FF500DB1B40 /* StoreView.swift */,
+				C8D90625290263BC00DB1B40 /* CartView.swift */,
+				C8A45DCE290700D00054071F /* ProductDetailedView.swift */,
+				C8A31AA029334E93005F1F19 /* IndividualProductView.swift */,
+				C8A7FA6229C3CD7E002CBF99 /* VisitStoreView.swift */,
+				C831EF532A6082580057E41B /* LogInView.swift */,
+				C831EF572A60BBC40057E41B /* NewAccountView.swift */,
+				C831EF592A60BED10057E41B /* PatientsView.swift */,
+				C831EF5B2A60C2720057E41B /* InviteNewPatientView.swift */,
+				C831EF5D2A61EF7E0057E41B /* SettingsView.swift */,
+				C831EF762A658E5E0057E41B /* SettingsView2.swift */,
+				C831EF722A6383340057E41B /* ForgotPasswordView.swift */,
+				C831EF7A2A6617C70057E41B /* PatientProfile.swift */,
+				C831EF7C2A68A37D0057E41B /* PatientTrackingView.swift */,
+				C831EF862A69F2040057E41B /* WaterLogsView.swift */,
+				C831EF882A69F3000057E41B /* AddWaterView.swift */,
+				C8D146002A6EC932003EE77E /* WeightEntryView.swift */,
+				C859FD422A6F385700D9D712 /* ChatView.swift */,
+				C859FD442A6F3C0000D9D712 /* MessageView.swift */,
+				C859FD462A6F3D0800D9D712 /* RecentChatView.swift */,
+				C859FD482A6F92B100D9D712 /* PatientMessageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8379325289D774000AF70BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C84D49DD28375D66004CAC75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C84D49DE28375D72004CAC75 /* ServicesModel.swift */,
+				C8D3CD85285576A1000BD7FC /* SupportEmail.swift */,
+				C874605A2865294D0006C53A /* LocationManager.swift */,
+				C8D9061D29025AD700DB1B40 /* Product.swift */,
+				C8C3A5B42A5A1B1B00D3EAD7 /* NetworkManager.swift */,
+				C831EF702A61F8540057E41B /* AuthViewModel.swift */,
+				C831EF742A63AB3A0057E41B /* UsersViewModel.swift */,
+				C831EF842A6992410057E41B /* TrackingViewModel.swift */,
+				C831EF8A2A6A03130057E41B /* WaterLogViewModel.swift */,
+				C859FD4A2A72F3EB00D9D712 /* CKChatMessage.swift */,
+				C859FD4E2A73379F00D9D712 /* NotificationManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C84D49E22837649D004CAC75 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C84D49E3283764EC004CAC75 /* DetailServicesView.swift */,
+				C8B0BB682840496B00582347 /* ImagePicker.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C889CD6C28309040002B71D2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C889CD6F283090B6002B71D2 /* TabBar.swift */,
+				C84D49E0283762DE004CAC75 /* ServicesList.swift */,
+				C84D49E5283769AA004CAC75 /* ServicesCard.swift */,
+				C8D9061F29025C1E00DB1B40 /* ProductCard.swift */,
+				C8D906232902622C00DB1B40 /* CartButton.swift */,
+				C8D9062B2903527200DB1B40 /* ProductRow.swift */,
+				C8A45DCA2906DCB90054071F /* PaymentButton.swift */,
+				C831EF7E2A68A5B60057E41B /* Tracking.swift */,
+				C8D146022A6ECEBB003EE77E /* TrackingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8321778283083C3004F82BC /* H&I Personalized Medicine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C832179D283083C4004F82BC /* Build configuration list for PBXNativeTarget "H&I Personalized Medicine" */;
+			buildPhases = (
+				C8321775283083C3004F82BC /* Sources */,
+				C8321776283083C3004F82BC /* Frameworks */,
+				C8321777283083C3004F82BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "H&I Personalized Medicine";
+			packageProductDependencies = (
+				C831EF642A61F3A20057E41B /* FirebaseAuth */,
+				C831EF662A61F3A20057E41B /* FirebaseDatabase */,
+				C831EF682A61F3A20057E41B /* FirebaseDatabaseSwift */,
+				C831EF6A2A61F3A20057E41B /* FirebaseFirestore */,
+				C831EF6C2A61F3A20057E41B /* FirebaseFirestoreSwift */,
+				C831EF6E2A61F3A20057E41B /* FirebaseStorage */,
+			);
+			productName = "H&I Personalized Medicine";
+			productReference = C8321779283083C3004F82BC /* H&I Personalized Medicine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8321788283083C4004F82BC /* H&I Personalized MedicineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C83217A0283083C4004F82BC /* Build configuration list for PBXNativeTarget "H&I Personalized MedicineTests" */;
+			buildPhases = (
+				C8321785283083C4004F82BC /* Sources */,
+				C8321786283083C4004F82BC /* Frameworks */,
+				C8321787283083C4004F82BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C832178B283083C4004F82BC /* PBXTargetDependency */,
+			);
+			name = "H&I Personalized MedicineTests";
+			productName = "H&I Personalized MedicineTests";
+			productReference = C8321789283083C4004F82BC /* H&I Personalized MedicineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8321792283083C4004F82BC /* H&I Personalized MedicineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C83217A3283083C4004F82BC /* Build configuration list for PBXNativeTarget "H&I Personalized MedicineUITests" */;
+			buildPhases = (
+				C832178F283083C4004F82BC /* Sources */,
+				C8321790283083C4004F82BC /* Frameworks */,
+				C8321791283083C4004F82BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8321795283083C4004F82BC /* PBXTargetDependency */,
+			);
+			name = "H&I Personalized MedicineUITests";
+			productName = "H&I Personalized MedicineUITests";
+			productReference = C8321793283083C4004F82BC /* H&I Personalized MedicineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8321771283083C3004F82BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					C8321778283083C3004F82BC = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C8321788283083C4004F82BC = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C8321778283083C3004F82BC;
+					};
+					C8321792283083C4004F82BC = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C8321778283083C3004F82BC;
+					};
+				};
+			};
+			buildConfigurationList = C8321774283083C3004F82BC /* Build configuration list for PBXProject "H&I Personalized Medicine" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8321770283083C3004F82BC;
+			packageReferences = (
+				C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = C832177A283083C3004F82BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8321778283083C3004F82BC /* H&I Personalized Medicine */,
+				C8321788283083C4004F82BC /* H&I Personalized MedicineTests */,
+				C8321792283083C4004F82BC /* H&I Personalized MedicineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8321777283083C3004F82BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8321784283083C4004F82BC /* Preview Assets.xcassets in Resources */,
+				C8321781283083C4004F82BC /* Assets.xcassets in Resources */,
+				C831EF622A61F3220057E41B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8321787283083C4004F82BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8321791283083C4004F82BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8321775283083C3004F82BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B0B38B2835DE5D0064BCF4 /* ContactUsForm.swift in Sources */,
+				C8D146012A6EC932003EE77E /* WeightEntryView.swift in Sources */,
+				C831EF872A69F2040057E41B /* WaterLogsView.swift in Sources */,
+				C84D49E1283762DE004CAC75 /* ServicesList.swift in Sources */,
+				C831EF5A2A60BED10057E41B /* PatientsView.swift in Sources */,
+				C8D90626290263BC00DB1B40 /* CartView.swift in Sources */,
+				C8A45DCD2906E5490054071F /* PaymentHandler.swift in Sources */,
+				C8D9062C2903527200DB1B40 /* ProductRow.swift in Sources */,
+				C8DF0BB6283C7EFC00374ACF /* Extentions.swift in Sources */,
+				C831EF542A6082580057E41B /* LogInView.swift in Sources */,
+				C832177F283083C3004F82BC /* ContentView.swift in Sources */,
+				C831EF582A60BBC40057E41B /* NewAccountView.swift in Sources */,
+				C831EF772A658E5E0057E41B /* SettingsView2.swift in Sources */,
+				C874605B2865294D0006C53A /* LocationManager.swift in Sources */,
+				C831EF7F2A68A5B60057E41B /* Tracking.swift in Sources */,
+				C8D9061E29025AD800DB1B40 /* Product.swift in Sources */,
+				C889CD7228309125002B71D2 /* AboutUsView.swift in Sources */,
+				C831EF5C2A60C2720057E41B /* InviteNewPatientView.swift in Sources */,
+				C8C3A5B52A5A1B1B00D3EAD7 /* NetworkManager.swift in Sources */,
+				C84D49DF28375D72004CAC75 /* ServicesModel.swift in Sources */,
+				C8D9062A2903502600DB1B40 /* CartManager.swift in Sources */,
+				C8A7FA6329C3CD7E002CBF99 /* VisitStoreView.swift in Sources */,
+				C8A45DCF290700D00054071F /* ProductDetailedView.swift in Sources */,
+				C84D49E6283769AA004CAC75 /* ServicesCard.swift in Sources */,
+				C831EF752A63AB3A0057E41B /* UsersViewModel.swift in Sources */,
+				C89B2123286F4EC60090B5E0 /* AppReviewRequest.swift in Sources */,
+				C859FD4B2A72F3EB00D9D712 /* CKChatMessage.swift in Sources */,
+				C8C3A5B72A5A205C00D3EAD7 /* AiView.swift in Sources */,
+				C831EF732A6383340057E41B /* ForgotPasswordView.swift in Sources */,
+				C8D9062229025FF500DB1B40 /* StoreView.swift in Sources */,
+				C8B0BB692840496B00582347 /* ImagePicker.swift in Sources */,
+				C831EF892A69F3000057E41B /* AddWaterView.swift in Sources */,
+				C859FD472A6F3D0800D9D712 /* RecentChatView.swift in Sources */,
+				C8D146032A6ECEBB003EE77E /* TrackingView.swift in Sources */,
+				C8D9062029025C1E00DB1B40 /* ProductCard.swift in Sources */,
+				C831EF8B2A6A03130057E41B /* WaterLogViewModel.swift in Sources */,
+				C831EF5E2A61EF7E0057E41B /* SettingsView.swift in Sources */,
+				C8940690289F5824004FBCEB /* FaqView.swift in Sources */,
+				C889CD7428309131002B71D2 /* ServicesView.swift in Sources */,
+				C831EF712A61F8540057E41B /* AuthViewModel.swift in Sources */,
+				C807129828A59FED00017B97 /* ConditionsTreatedView.swift in Sources */,
+				C83217A828308498004F82BC /* Home.swift in Sources */,
+				C84D49E4283764EC004CAC75 /* DetailServicesView.swift in Sources */,
+				C889CD7828309152002B71D2 /* ContactUsView.swift in Sources */,
+				C8A45DCB2906DCB90054071F /* PaymentButton.swift in Sources */,
+				C8A31AA129334E93005F1F19 /* IndividualProductView.swift in Sources */,
+				C859FD432A6F385700D9D712 /* ChatView.swift in Sources */,
+				C8D3CD86285576A1000BD7FC /* SupportEmail.swift in Sources */,
+				C8004D4428A35A3E00D99B56 /* ProvidedServicesView.swift in Sources */,
+				C859FD492A6F92B100D9D712 /* PatientMessageView.swift in Sources */,
+				C831EF7D2A68A37D0057E41B /* PatientTrackingView.swift in Sources */,
+				C859FD452A6F3C0000D9D712 /* MessageView.swift in Sources */,
+				C832177D283083C3004F82BC /* H_I_Personalized_MedicineApp.swift in Sources */,
+				C831EF7B2A6617C70057E41B /* PatientProfile.swift in Sources */,
+				C889CD70283090B6002B71D2 /* TabBar.swift in Sources */,
+				C831EF852A6992410057E41B /* TrackingViewModel.swift in Sources */,
+				C859FD4F2A73379F00D9D712 /* NotificationManager.swift in Sources */,
+				C8D906242902622C00DB1B40 /* CartButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8321785283083C4004F82BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C832178E283083C4004F82BC /* H_I_Personalized_MedicineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C832178F283083C4004F82BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8321798283083C4004F82BC /* H_I_Personalized_MedicineUITests.swift in Sources */,
+				C832179A283083C4004F82BC /* H_I_Personalized_MedicineUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C832178B283083C4004F82BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8321778283083C3004F82BC /* H&I Personalized Medicine */;
+			targetProxy = C832178A283083C4004F82BC /* PBXContainerItemProxy */;
+		};
+		C8321795283083C4004F82BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8321778283083C3004F82BC /* H&I Personalized Medicine */;
+			targetProxy = C8321794283083C4004F82BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C832179B283083C4004F82BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C832179C283083C4004F82BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C832179E283083C4004F82BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = "H&I Personalized Medicine/H&I Personalized Medicine.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"H&I Personalized Medicine/Preview Content\"";
+				DEVELOPMENT_TEAM = CRH4BNJVR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "H-I-Personalized-Medicine-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "H&I-PM";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Needs location to show locations on map";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "random.H-I-Personalized-Medicine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C832179F283083C4004F82BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = "H&I Personalized Medicine/H&I Personalized Medicine.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"H&I Personalized Medicine/Preview Content\"";
+				DEVELOPMENT_TEAM = CRH4BNJVR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "H-I-Personalized-Medicine-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "H&I-PM";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Needs location to show locations on map";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "random.H-I-Personalized-Medicine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C83217A1283083C4004F82BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CRH4BNJVR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "random.H-I-Personalized-MedicineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H&I Personalized Medicine.app/H&I Personalized Medicine";
+			};
+			name = Debug;
+		};
+		C83217A2283083C4004F82BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CRH4BNJVR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "random.H-I-Personalized-MedicineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H&I Personalized Medicine.app/H&I Personalized Medicine";
+			};
+			name = Release;
+		};
+		C83217A4283083C4004F82BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CRH4BNJVR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "random.H-I-Personalized-MedicineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "H&I Personalized Medicine";
+			};
+			name = Debug;
+		};
+		C83217A5283083C4004F82BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CRH4BNJVR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "random.H-I-Personalized-MedicineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "H&I Personalized Medicine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8321774283083C3004F82BC /* Build configuration list for PBXProject "H&I Personalized Medicine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C832179B283083C4004F82BC /* Debug */,
+				C832179C283083C4004F82BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C832179D283083C4004F82BC /* Build configuration list for PBXNativeTarget "H&I Personalized Medicine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C832179E283083C4004F82BC /* Debug */,
+				C832179F283083C4004F82BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C83217A0283083C4004F82BC /* Build configuration list for PBXNativeTarget "H&I Personalized MedicineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83217A1283083C4004F82BC /* Debug */,
+				C83217A2283083C4004F82BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C83217A3283083C4004F82BC /* Build configuration list for PBXNativeTarget "H&I Personalized MedicineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83217A4283083C4004F82BC /* Debug */,
+				C83217A5283083C4004F82BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C831EF642A61F3A20057E41B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C831EF662A61F3A20057E41B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		C831EF682A61F3A20057E41B /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		C831EF6A2A61F3A20057E41B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C831EF6C2A61F3A20057E41B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		C831EF6E2A61F3A20057E41B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C8321771283083C3004F82BC /* Project object */;
+}
