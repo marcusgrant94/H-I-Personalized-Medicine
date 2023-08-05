@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseCore
 import UserNotifications
 import CloudKit
+//import FirebaseMessaging
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
   func application(_ application: UIApplication,
@@ -79,6 +80,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
 struct H_I_Personalized_MedicineApp: App {
     @StateObject var authViewModel = AuthViewModel()
     @StateObject var usersViewModel = UsersViewModel()
+    @StateObject var exerciseLogViewModel = ExerciseLogViewModel()
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     
@@ -92,7 +94,8 @@ struct H_I_Personalized_MedicineApp: App {
 //            NewAccountView().environmentObject(AuthViewModel())
 //            LogInView().environmentObject(authViewModel)
 //            ChatView(recipientID: "SampleRecipientID").environmentObject(UsersViewModel())
-            
+//            ExerciseView(logViewModel: exerciseLogViewModel)
+//            AddExerciseDetailedView()
             
         }
     }

@@ -9,27 +9,33 @@ import SwiftUI
 
 struct MessageView: View {
     var message: Message
-    
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .none
+        formatter.timeStyle = .short
+        return formatter
+    }()
+
     var body: some View {
-        HStack {
-            if message.isCurrentUser {
-                Spacer()
-                Text(message.text)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .clipShape(ChatBubble(isFromCurrentUser: message.isCurrentUser))
-            } else {
-                Text(message.text)
-                    .padding()
-                    .background(Color.gray)
-                    .foregroundColor(.white)
-                    .clipShape(ChatBubble(isFromCurrentUser: message.isCurrentUser))
-                Spacer()
+            HStack {
+                if message.isCurrentUser {
+                    Spacer()
+                    Text(message.text)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .clipShape(ChatBubble(isFromCurrentUser: message.isCurrentUser))
+                } else {
+                    Text(message.text)
+                        .padding()
+                        .background(Color.gray)
+                        .foregroundColor(.white)
+                        .clipShape(ChatBubble(isFromCurrentUser: message.isCurrentUser))
+                    Spacer()
+                }
             }
         }
     }
-}
 
 struct ChatBubble: Shape {
     var isFromCurrentUser: Bool

@@ -18,6 +18,7 @@ struct User: Identifiable {
     let age: Int?
     let height: Double?
     let weight: Double?
+    let profileImageURL: String?
     // Add other properties if needed
 }
 
@@ -80,13 +81,14 @@ class UsersViewModel: ObservableObject {
                 let age = data["age"] as? Int ?? 0
                 let height = data["height"] as? Double ?? 0.0
                 let weight = data["weight"] as? Double ?? 0.0
+                let profileImageUrl = data["imageUrl"] as? String
                 
                 // Check if this is the currently logged-in user
                 if id == uid {
                     self.currentUserRole = role
                 }
                 
-                return User(id: id, email: email, role: role, name: name, age: age, height: height, weight: weight)
+                return User(id: id, email: email, role: role, name: name, age: age, height: height, weight: weight, profileImageURL: profileImageUrl)
             }
         }
     }

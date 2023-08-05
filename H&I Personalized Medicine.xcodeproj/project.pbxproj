@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		039C7587A6E6BB8D5AE5CE49 /* Pods_H_I_Personalized_MedicineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F99BA39F10593FA49EDA8C /* Pods_H_I_Personalized_MedicineTests.framework */; };
+		773754FBE4052223FFB6AF64 /* Pods_H_I_Personalized_Medicine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FDBE73DADB7A05E7BB30A7 /* Pods_H_I_Personalized_Medicine.framework */; };
 		C8004D4428A35A3E00D99B56 /* ProvidedServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8004D4328A35A3E00D99B56 /* ProvidedServicesView.swift */; };
 		C807129828A59FED00017B97 /* ConditionsTreatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C807129728A59FED00017B97 /* ConditionsTreatedView.swift */; };
 		C831EF542A6082580057E41B /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C831EF532A6082580057E41B /* LogInView.swift */; };
@@ -50,6 +52,13 @@
 		C859FD492A6F92B100D9D712 /* PatientMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD482A6F92B100D9D712 /* PatientMessageView.swift */; };
 		C859FD4B2A72F3EB00D9D712 /* CKChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD4A2A72F3EB00D9D712 /* CKChatMessage.swift */; };
 		C859FD4F2A73379F00D9D712 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD4E2A73379F00D9D712 /* NotificationManager.swift */; };
+		C859FD532A76F83D00D9D712 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD522A76F83D00D9D712 /* ImageLoader.swift */; };
+		C859FD562A77104800D9D712 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = C859FD552A77104800D9D712 /* URLImage */; };
+		C859FD582A787FB000D9D712 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD572A787FB000D9D712 /* ExerciseView.swift */; };
+		C859FD5A2A78860B00D9D712 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD592A78860B00D9D712 /* AddExerciseView.swift */; };
+		C859FD5C2A78895900D9D712 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD5B2A78895900D9D712 /* ExerciseViewModel.swift */; };
+		C859FD5E2A7995E300D9D712 /* AddExerciseDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD5D2A7995E300D9D712 /* AddExerciseDetailedView.swift */; };
+		C859FD602A79A0F800D9D712 /* ExerciseLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859FD5F2A79A0F800D9D712 /* ExerciseLogViewModel.swift */; };
 		C874605B2865294D0006C53A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874605A2865294D0006C53A /* LocationManager.swift */; };
 		C889CD70283090B6002B71D2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C889CD6F283090B6002B71D2 /* TabBar.swift */; };
 		C889CD7228309125002B71D2 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C889CD7128309125002B71D2 /* AboutUsView.swift */; };
@@ -77,6 +86,7 @@
 		C8D9062A2903502600DB1B40 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D906292903502600DB1B40 /* CartManager.swift */; };
 		C8D9062C2903527200DB1B40 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9062B2903527200DB1B40 /* ProductRow.swift */; };
 		C8DF0BB6283C7EFC00374ACF /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DF0BB5283C7EFC00374ACF /* Extentions.swift */; };
+		FE866ED0267FD91B4FD04D3E /* Pods_H_I_Personalized_Medicine_H_I_Personalized_MedicineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D7CDE181F0133AB65C91C4 /* Pods_H_I_Personalized_Medicine_H_I_Personalized_MedicineUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +107,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25FDBE73DADB7A05E7BB30A7 /* Pods_H_I_Personalized_Medicine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H_I_Personalized_Medicine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F99BA39F10593FA49EDA8C /* Pods_H_I_Personalized_MedicineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H_I_Personalized_MedicineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D7CDE181F0133AB65C91C4 /* Pods_H_I_Personalized_Medicine_H_I_Personalized_MedicineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H_I_Personalized_Medicine_H_I_Personalized_MedicineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE8BCD08AD1DCCC14757EDF /* Pods-H&I Personalized MedicineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&I Personalized MedicineTests.release.xcconfig"; path = "Target Support Files/Pods-H&I Personalized MedicineTests/Pods-H&I Personalized MedicineTests.release.xcconfig"; sourceTree = "<group>"; };
+		80621B6FDE80FBB025382F09 /* Pods-H&I Personalized Medicine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&I Personalized Medicine.release.xcconfig"; path = "Target Support Files/Pods-H&I Personalized Medicine/Pods-H&I Personalized Medicine.release.xcconfig"; sourceTree = "<group>"; };
+		83C3018FA3B13E785F0B4DE1 /* Pods-H&I Personalized Medicine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&I Personalized Medicine.debug.xcconfig"; path = "Target Support Files/Pods-H&I Personalized Medicine/Pods-H&I Personalized Medicine.debug.xcconfig"; sourceTree = "<group>"; };
+		C027C36AEE32420E66EA504F /* Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.release.xcconfig"; path = "Target Support Files/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C8004D4328A35A3E00D99B56 /* ProvidedServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidedServicesView.swift; sourceTree = "<group>"; };
 		C807129728A59FED00017B97 /* ConditionsTreatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsTreatedView.swift; sourceTree = "<group>"; };
 		C80D6401285941C000107C0B /* H-I-Personalized-Medicine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "H-I-Personalized-Medicine-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -139,6 +156,12 @@
 		C859FD482A6F92B100D9D712 /* PatientMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMessageView.swift; sourceTree = "<group>"; };
 		C859FD4A2A72F3EB00D9D712 /* CKChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKChatMessage.swift; sourceTree = "<group>"; };
 		C859FD4E2A73379F00D9D712 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C859FD522A76F83D00D9D712 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		C859FD572A787FB000D9D712 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		C859FD592A78860B00D9D712 /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
+		C859FD5B2A78895900D9D712 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
+		C859FD5D2A7995E300D9D712 /* AddExerciseDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseDetailedView.swift; sourceTree = "<group>"; };
+		C859FD5F2A79A0F800D9D712 /* ExerciseLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLogViewModel.swift; sourceTree = "<group>"; };
 		C874605A2865294D0006C53A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C889CD6F283090B6002B71D2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C889CD7128309125002B71D2 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
@@ -166,6 +189,8 @@
 		C8D906292903502600DB1B40 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		C8D9062B2903527200DB1B40 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		C8DF0BB5283C7EFC00374ACF /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		DF66568C7B5631CAE7D0E281 /* Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.debug.xcconfig"; path = "Target Support Files/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4BC3F17B80634C3476D4D28 /* Pods-H&I Personalized MedicineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&I Personalized MedicineTests.debug.xcconfig"; path = "Target Support Files/Pods-H&I Personalized MedicineTests/Pods-H&I Personalized MedicineTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,8 +202,10 @@
 				C831EF672A61F3A20057E41B /* FirebaseDatabase in Frameworks */,
 				C831EF6B2A61F3A20057E41B /* FirebaseFirestore in Frameworks */,
 				C831EF6F2A61F3A20057E41B /* FirebaseStorage in Frameworks */,
+				C859FD562A77104800D9D712 /* URLImage in Frameworks */,
 				C831EF652A61F3A20057E41B /* FirebaseAuth in Frameworks */,
 				C831EF6D2A61F3A20057E41B /* FirebaseFirestoreSwift in Frameworks */,
+				773754FBE4052223FFB6AF64 /* Pods_H_I_Personalized_Medicine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039C7587A6E6BB8D5AE5CE49 /* Pods_H_I_Personalized_MedicineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,12 +221,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE866ED0267FD91B4FD04D3E /* Pods_H_I_Personalized_Medicine_H_I_Personalized_MedicineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B3FD51FF022D81E1DC02C86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25FDBE73DADB7A05E7BB30A7 /* Pods_H_I_Personalized_Medicine.framework */,
+				66D7CDE181F0133AB65C91C4 /* Pods_H_I_Personalized_Medicine_H_I_Personalized_MedicineUITests.framework */,
+				65F99BA39F10593FA49EDA8C /* Pods_H_I_Personalized_MedicineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CC5E77E48902A053DC8D933 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83C3018FA3B13E785F0B4DE1 /* Pods-H&I Personalized Medicine.debug.xcconfig */,
+				80621B6FDE80FBB025382F09 /* Pods-H&I Personalized Medicine.release.xcconfig */,
+				DF66568C7B5631CAE7D0E281 /* Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.debug.xcconfig */,
+				C027C36AEE32420E66EA504F /* Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.release.xcconfig */,
+				E4BC3F17B80634C3476D4D28 /* Pods-H&I Personalized MedicineTests.debug.xcconfig */,
+				7AE8BCD08AD1DCCC14757EDF /* Pods-H&I Personalized MedicineTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C8321770283083C3004F82BC = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +259,8 @@
 				C832178C283083C4004F82BC /* H&I Personalized MedicineTests */,
 				C8321796283083C4004F82BC /* H&I Personalized MedicineUITests */,
 				C832177A283083C3004F82BC /* Products */,
-				C8379325289D774000AF70BC /* Frameworks */,
+				7CC5E77E48902A053DC8D933 /* Pods */,
+				2B3FD51FF022D81E1DC02C86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,15 +354,11 @@
 				C859FD442A6F3C0000D9D712 /* MessageView.swift */,
 				C859FD462A6F3D0800D9D712 /* RecentChatView.swift */,
 				C859FD482A6F92B100D9D712 /* PatientMessageView.swift */,
+				C859FD572A787FB000D9D712 /* ExerciseView.swift */,
+				C859FD592A78860B00D9D712 /* AddExerciseView.swift */,
+				C859FD5D2A7995E300D9D712 /* AddExerciseDetailedView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C8379325289D774000AF70BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C84D49DD28375D66004CAC75 /* Models */ = {
@@ -325,6 +375,9 @@
 				C831EF8A2A6A03130057E41B /* WaterLogViewModel.swift */,
 				C859FD4A2A72F3EB00D9D712 /* CKChatMessage.swift */,
 				C859FD4E2A73379F00D9D712 /* NotificationManager.swift */,
+				C859FD522A76F83D00D9D712 /* ImageLoader.swift */,
+				C859FD5B2A78895900D9D712 /* ExerciseViewModel.swift */,
+				C859FD5F2A79A0F800D9D712 /* ExerciseLogViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -361,9 +414,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C832179D283083C4004F82BC /* Build configuration list for PBXNativeTarget "H&I Personalized Medicine" */;
 			buildPhases = (
+				857475BF9376FF881E1AF6C4 /* [CP] Check Pods Manifest.lock */,
 				C8321775283083C3004F82BC /* Sources */,
 				C8321776283083C3004F82BC /* Frameworks */,
 				C8321777283083C3004F82BC /* Resources */,
+				5D557C20CFCD62E38EE8A99B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,6 +432,7 @@
 				C831EF6A2A61F3A20057E41B /* FirebaseFirestore */,
 				C831EF6C2A61F3A20057E41B /* FirebaseFirestoreSwift */,
 				C831EF6E2A61F3A20057E41B /* FirebaseStorage */,
+				C859FD552A77104800D9D712 /* URLImage */,
 			);
 			productName = "H&I Personalized Medicine";
 			productReference = C8321779283083C3004F82BC /* H&I Personalized Medicine.app */;
@@ -386,6 +442,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C83217A0283083C4004F82BC /* Build configuration list for PBXNativeTarget "H&I Personalized MedicineTests" */;
 			buildPhases = (
+				E6EDE60DE9202018CB8498F0 /* [CP] Check Pods Manifest.lock */,
 				C8321785283083C4004F82BC /* Sources */,
 				C8321786283083C4004F82BC /* Frameworks */,
 				C8321787283083C4004F82BC /* Resources */,
@@ -404,9 +461,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C83217A3283083C4004F82BC /* Build configuration list for PBXNativeTarget "H&I Personalized MedicineUITests" */;
 			buildPhases = (
+				5C0C64C16425F8BE63D49BC1 /* [CP] Check Pods Manifest.lock */,
 				C832178F283083C4004F82BC /* Sources */,
 				C8321790283083C4004F82BC /* Frameworks */,
 				C8321791283083C4004F82BC /* Resources */,
+				DBEBB159FB0D3769090AD200 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -451,7 +510,8 @@
 			);
 			mainGroup = C8321770283083C3004F82BC;
 			packageReferences = (
-				C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
+				C859FD542A77104800D9D712 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = C832177A283083C3004F82BC /* Products */;
 			projectDirPath = "";
@@ -491,6 +551,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C0C64C16425F8BE63D49BC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D557C20CFCD62E38EE8A99B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-H&I Personalized Medicine/Pods-H&I Personalized Medicine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-H&I Personalized Medicine/Pods-H&I Personalized Medicine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-H&I Personalized Medicine/Pods-H&I Personalized Medicine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		857475BF9376FF881E1AF6C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H&I Personalized Medicine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBEBB159FB0D3769090AD200 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests/Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6EDE60DE9202018CB8498F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H&I Personalized MedicineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8321775283083C3004F82BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -517,10 +680,13 @@
 				C8C3A5B52A5A1B1B00D3EAD7 /* NetworkManager.swift in Sources */,
 				C84D49DF28375D72004CAC75 /* ServicesModel.swift in Sources */,
 				C8D9062A2903502600DB1B40 /* CartManager.swift in Sources */,
+				C859FD532A76F83D00D9D712 /* ImageLoader.swift in Sources */,
 				C8A7FA6329C3CD7E002CBF99 /* VisitStoreView.swift in Sources */,
 				C8A45DCF290700D00054071F /* ProductDetailedView.swift in Sources */,
+				C859FD582A787FB000D9D712 /* ExerciseView.swift in Sources */,
 				C84D49E6283769AA004CAC75 /* ServicesCard.swift in Sources */,
 				C831EF752A63AB3A0057E41B /* UsersViewModel.swift in Sources */,
+				C859FD602A79A0F800D9D712 /* ExerciseLogViewModel.swift in Sources */,
 				C89B2123286F4EC60090B5E0 /* AppReviewRequest.swift in Sources */,
 				C859FD4B2A72F3EB00D9D712 /* CKChatMessage.swift in Sources */,
 				C8C3A5B72A5A205C00D3EAD7 /* AiView.swift in Sources */,
@@ -544,6 +710,7 @@
 				C8A31AA129334E93005F1F19 /* IndividualProductView.swift in Sources */,
 				C859FD432A6F385700D9D712 /* ChatView.swift in Sources */,
 				C8D3CD86285576A1000BD7FC /* SupportEmail.swift in Sources */,
+				C859FD5C2A78895900D9D712 /* ExerciseViewModel.swift in Sources */,
 				C8004D4428A35A3E00D99B56 /* ProvidedServicesView.swift in Sources */,
 				C859FD492A6F92B100D9D712 /* PatientMessageView.swift in Sources */,
 				C831EF7D2A68A37D0057E41B /* PatientTrackingView.swift in Sources */,
@@ -551,7 +718,9 @@
 				C832177D283083C3004F82BC /* H_I_Personalized_MedicineApp.swift in Sources */,
 				C831EF7B2A6617C70057E41B /* PatientProfile.swift in Sources */,
 				C889CD70283090B6002B71D2 /* TabBar.swift in Sources */,
+				C859FD5E2A7995E300D9D712 /* AddExerciseDetailedView.swift in Sources */,
 				C831EF852A6992410057E41B /* TrackingViewModel.swift in Sources */,
+				C859FD5A2A78860B00D9D712 /* AddExerciseView.swift in Sources */,
 				C859FD4F2A73379F00D9D712 /* NotificationManager.swift in Sources */,
 				C8D906242902622C00DB1B40 /* CartButton.swift in Sources */,
 			);
@@ -708,6 +877,7 @@
 		};
 		C832179E283083C4004F82BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C3018FA3B13E785F0B4DE1 /* Pods-H&I Personalized Medicine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -748,6 +918,7 @@
 		};
 		C832179F283083C4004F82BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80621B6FDE80FBB025382F09 /* Pods-H&I Personalized Medicine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -788,6 +959,7 @@
 		};
 		C83217A1283083C4004F82BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4BC3F17B80634C3476D4D28 /* Pods-H&I Personalized MedicineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -813,6 +985,7 @@
 		};
 		C83217A2283083C4004F82BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE8BCD08AD1DCCC14757EDF /* Pods-H&I Personalized MedicineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -838,6 +1011,7 @@
 		};
 		C83217A4283083C4004F82BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF66568C7B5631CAE7D0E281 /* Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -861,6 +1035,7 @@
 		};
 		C83217A5283083C4004F82BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C027C36AEE32420E66EA504F /* Pods-H&I Personalized Medicine-H&I Personalized MedicineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -924,7 +1099,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -932,38 +1107,51 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		C859FD542A77104800D9D712 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		C831EF642A61F3A20057E41B /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseAuth;
 		};
 		C831EF662A61F3A20057E41B /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseDatabase;
 		};
 		C831EF682A61F3A20057E41B /* FirebaseDatabaseSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseDatabaseSwift;
 		};
 		C831EF6A2A61F3A20057E41B /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFirestore;
 		};
 		C831EF6C2A61F3A20057E41B /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFirestoreSwift;
 		};
 		C831EF6E2A61F3A20057E41B /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = C831EF632A61F3A20057E41B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseStorage;
+		};
+		C859FD552A77104800D9D712 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C859FD542A77104800D9D712 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

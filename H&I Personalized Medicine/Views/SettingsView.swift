@@ -7,12 +7,16 @@
 
 import SwiftUI
 import FirebaseAuth
+import FirebaseStorage
+import FirebaseFirestore
 
 struct SettingsView: View {
     @EnvironmentObject var usersViewModel: UsersViewModel
     let currentUser = Auth.auth().currentUser
     @State private var showingImagePicker = false
+    @State private var profileImage: UIImage? = nil
     @State private var inputImage: UIImage?
+    var user: User?
 
     var body: some View {
         NavigationView {
@@ -20,8 +24,8 @@ struct SettingsView: View {
                 Button(action: {
                     showingImagePicker = true
                 }) {
-                    if let inputImage = inputImage {
-                        Image(uiImage: inputImage)
+                    if let profileImage = profileImage {
+                        Image(uiImage: profileImage)
                             .resizable()
                             .scaledToFit()
                             .frame(height: 200)
@@ -36,12 +40,11 @@ struct SettingsView: View {
                             .padding()
                     }
                 }
-                
-                Text(getUser()?.name ?? "Not Signed in")
+                Text(getUser()?.name ?? "Not Signed In")
                     .bold()
-                    .padding(.horizontal)
-                Text(getUser()?.email ?? "Not Signed in")
-                    .padding(.horizontal)
+                    .offset(y: -18)
+                Text(getUser()?.email ?? "Not Signed In")
+                    .offset(y: -15)
                 Spacer()
             }
             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
@@ -63,25 +66,30 @@ struct SettingsView: View {
                 }
             )
         }
+        .onAppear {
+            loadImageFromURL()
+        }
     }
     
-    func getUser() -> User? {
-        return usersViewModel.users.first { $0.id == currentUser?.uid }
+    func loadImageFromURL() {
+        guard let user = getUser(), let urlString = user.profileImageURL, let url = URL(string: urlString) else { return }
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    self.profileImage = UIImage(data: data)
+                }
+            }
+        }
     }
     
     func loadImage() {
-        // Here you can do something with the selected image
-    }
-}
+        guard let user = getUser(), let inputImage = inputImage else { return }
+        profileImage = nil
+        usersViewModel.uploadImage(inputImage, for: user)
 
-
-
-
-
-
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView().environmentObject(UsersViewModel())
+        }
+    
+    func getUser() -> User? {
+        return usersViewModel.users.first { $0.id == currentUser?.uid }
     }
 }

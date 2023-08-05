@@ -61,7 +61,7 @@ struct InviteNewPatientView: View {
                                 print("Error creating user: \(error)")
                             } else if let user = authResult?.user {
                                 // Create a User instance with the necessary information
-                                let newUser = User(id: user.uid, email: email, role: "user", name: firstName + " " + lastName, age: nil, height: nil, weight: nil)
+                                let newUser = User(id: user.uid, email: email, role: "user", name: firstName + " " + lastName, age: nil, height: nil, weight: nil, profileImageURL: nil)
                                 
                                 // Add the new user to Firestore using the UsersViewModel
                                 usersViewModel.addUser(newUser)

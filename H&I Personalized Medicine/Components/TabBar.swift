@@ -71,12 +71,13 @@ struct TabBar: View {
                     }
             }
             
-            if usersViewModel.currentUserRole == "user" {
-                SettingsView2(user: User(id: "123", email: "letsgo12@example.com", role: "Patient", name: "Idont Know", age: nil, height: nil, weight: nil))
+            if usersViewModel.currentUserRole == "user", let currentUser = usersViewModel.users.first(where: { $0.id == Auth.auth().currentUser?.uid }) {
+                SettingsView2(user: currentUser)
                     .tabItem {
                         Label("Settings", systemImage: "gearshape")
                     }
             }
+
             
         }
         .accentColor(Color(hue: 0.454, saturation: 0.991, brightness: 0.52, opacity: 0.911))

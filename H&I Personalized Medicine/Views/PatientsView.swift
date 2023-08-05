@@ -31,7 +31,21 @@ struct PatientsView: View {
                         List {
                             ForEach(viewModel.otherUsers) { user in
                                 NavigationLink(destination: PatientProfile(user: user)) {
-                                    Text(user.name)
+                                    HStack {
+                                        if let profileImageURL = user.profileImageURL, let url  = URL(string: profileImageURL) {
+                                            
+                                            URLImage(url: url)
+                                                                .frame(width: 50, height: 50)
+                                                                .clipShape(Circle())
+                                        } else {
+                                            Image("placeholder")
+                                                .resizable()
+                                                .frame(width: 50, height: 50)
+                                                .clipShape(Circle())
+                                        }
+                                        Text(user.name)
+                                    }
+                                    
                                 }
                             }
                             .onDelete(perform: deleteItems)

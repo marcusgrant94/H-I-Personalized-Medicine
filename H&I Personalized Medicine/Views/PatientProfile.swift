@@ -23,26 +23,33 @@ struct PatientProfile: View {
     var user: User
     
     var body: some View {
-            VStack {
-                Button(action: {
-                    showingImagePicker = true
-                }) {
-                    if let inputImage = inputImage {
-                        Image(uiImage: inputImage)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 200)
-                            .clipShape(Circle())
-                            .padding()
-                    } else {
-                        Image("placeholder")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 70)
-                            .clipShape(Circle())
-                            .padding()
+        VStack {
+                    Button(action: {
+                        showingImagePicker = true
+                    }) {
+                        if let inputImage = inputImage {
+                            Image(uiImage: inputImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 200)
+                                .clipShape(Circle())
+                                .padding()
+                        } else if let profileImageURL = user.profileImageURL, let url = URL(string: profileImageURL) {
+                            URLImage(url: url)
+                                
+                                .scaledToFit()
+                                .frame(height: 200)
+                                .clipShape(Circle())
+                                .padding()
+                        } else {
+                            Image("placeholder")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 70)
+                                .clipShape(Circle())
+                                .padding()
+                        }
                     }
-                }
                 Text(user.name)
                     .bold()
                     .offset(y: -18)
@@ -63,7 +70,9 @@ struct PatientProfile: View {
                         Text("Water Tracker")
                     }
                     Divider()
-                    Text("Body Tracker")
+                    NavigationLink(destination: WaterLogsView(waterLogViewModel: WaterLogViewModel(userID: user.id))) {
+                        Text("Water Tracker")
+                    }
                 }
                 Spacer()
             }
@@ -102,9 +111,9 @@ struct PatientProfile: View {
     }
 }
 
-struct PatientProfile_Previews: PreviewProvider {
-    static var previews: some View {
-        PatientProfile(user: User(id: "124", email: "email@example.com", role: "patient", name: "John Doe", age: 20, height: 180, weight: 75)).environmentObject(UsersViewModel())
-    }
-}
+//struct PatientProfile_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PatientProfile(user: User(id: "124", email: "email@example.com", role: "patient", name: "John Doe", age: 20, height: 180, weight: 75)).environmentObject(UsersViewModel())
+//    }
+//}
 

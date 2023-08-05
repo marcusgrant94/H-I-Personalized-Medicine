@@ -14,6 +14,7 @@ struct Message: Identifiable {
     var id: String
     var text: String
     var userID: String
+    var timestamp: Date
     var isCurrentUser: Bool { userID == Auth.auth().currentUser?.uid }
 }
 
@@ -61,9 +62,15 @@ struct ChatView: View {
             ScrollView {
                 ScrollViewReader { scrollView in
                     LazyVStack {
-                        ForEach(messages) { message in
-                            MessageView(message: message)
-                                .id(message.id)
+                        ForEach(messages.indices, id: \.self) { index in
+                            if shouldShowTimestamp(index: index) {
+                                Text(getTimestampString(index: index))
+                                    .font(.footnote)
+                                    .foregroundColor(.gray)
+                                    .padding(.bottom, 5)
+                            }
+                            MessageView(message: messages[index])
+                                .id(messages[index].id)
                                 .padding(.horizontal)
                         }
                     }
@@ -91,8 +98,24 @@ struct ChatView: View {
                 }
             }
             .padding(.horizontal, 25)
-            .navigationTitle(recipient?.name ?? "User")
+            .navigationTitle("")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    VStack {
+                        if let recipient = recipient,
+                           let profileImageURL = recipient.profileImageURL,
+                           let url = URL(string: profileImageURL) {
+                            URLImage(url: url)
+                                .frame(width: 43, height: 50)
+                                .clipShape(Circle())
+                                .padding(.bottom, 4)
+                        }
+//                        Text(recipient?.name ?? "User")
+                    }
+//                    .padding(.top, 5)
+                }
+            }
         }
     }
     
@@ -113,13 +136,15 @@ struct ChatView: View {
                 return
             }
 
-            self.messages = documents.map { queryDocumentSnapshot -> Message in
-                let data = queryDocumentSnapshot.data()
-                let id = data["userID"] as? String ?? "Unknown User"
-                let text = data["text"] as? String ?? ""
-                
-                return Message(id: queryDocumentSnapshot.documentID, text: text, userID: id)
-            }
+                self.messages = documents.map { queryDocumentSnapshot -> Message in
+                    let data = queryDocumentSnapshot.data()
+                    let id = data["userID"] as? String ?? "Unknown User"
+                    let text = data["text"] as? String ?? ""
+                    let timestamp = (data["creationTime"] as? Timestamp)?.dateValue() ?? Date()
+
+                    return Message(id: queryDocumentSnapshot.documentID, text: text, userID: id, timestamp: timestamp)
+                }
+
         }
     }
     
@@ -153,9 +178,11 @@ struct ChatView: View {
                     self.messages = results.map { record -> Message in
                         let id = record["userID"] as? String ?? "Unknown User"
                         let text = record["text"] as? String ?? ""
+                        let timestamp = record["creationTime"] as? Date ?? Date()
 
-                        return Message(id: record.recordID.recordName, text: text, userID: id)
+                        return Message(id: record.recordID.recordName, text: text, userID: id, timestamp: timestamp)
                     }
+
                 }
             }
         }
@@ -205,6 +232,35 @@ struct ChatView: View {
             }
         }
     }
+    
+    // Determines if the timestamp should be shown based on the difference in time between the current message and the next one
+    func shouldShowTimestamp(index: Int) -> Bool {
+        guard index < messages.count - 1 else {
+            return false // Do not show timestamp for last message
+        }
+        let currentTimestamp = messages[index].timestamp
+        let nextTimestamp = messages[index + 1].timestamp
+        
+        return nextTimestamp.timeIntervalSince(currentTimestamp) >= 5 * 60 // 10 minutes
+    }
+
+    
+    func getTimestampString(index: Int) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short  // This will include the date
+        dateFormatter.timeStyle = .short
+
+        // Check if index + 1 is a valid index
+        guard index + 1 < messages.count else {
+            // Return an empty string or some default value
+            return ""
+        }
+
+        return dateFormatter.string(from: messages[index + 1].timestamp)
+    }
+
+
+
 
 
 
