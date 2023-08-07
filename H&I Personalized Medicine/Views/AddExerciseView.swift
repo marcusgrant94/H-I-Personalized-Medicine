@@ -31,12 +31,12 @@ struct AddExerciseView: View {
         .navigationTitle("Exercises")
         .onAppear {
             viewModel.loadExercises()
-            print("Exercises loaded: \(viewModel.groupedExercises)")
-            logViewModel.fetchLogs(forUserID: Auth.auth().currentUser?.uid ?? "")
+//            print("Exercises loaded: \(viewModel.groupedExercises)")
+//            logViewModel.fetchLogs(forUserID: Auth.auth().currentUser?.uid ?? "")
         }
-        .onDisappear {
-            print("AddExerciseView disappeared")
-        }
+//        .onDisappear {
+//            print("AddExerciseView disappeared")
+//        }
     }
 
     // Get filtered exercises for a given muscle group

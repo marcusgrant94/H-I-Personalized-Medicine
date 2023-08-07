@@ -11,12 +11,12 @@ import FirebaseFirestore
 
 
 struct ExerciseLog: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     let exercise: Exercise
     let date: Date
     let minutes: Int
     let weight: Int
-    let userID: String
+    var userID: String
     // ...
 }
 
@@ -43,45 +43,45 @@ extension ExerciseLog {
 class ExerciseLogViewModel: ObservableObject {
     @Published var logs = [ExerciseLog]()
     let db = Firestore.firestore()
-    let userID: String
+    var listener: ListenerRegistration?
+    @Published var userID: String {
+        didSet {
+//            fetchLogs(forUserID: userID)
+        }
+    }
 
     init(userID: String) {
         self.userID = userID
-        fetchLogs(forUserID: userID)
+//        fetchLogs(forUserID: userID) // Fetch logs on initialization
+        listenForChanges()
+
     }
+    
+    deinit {
+            listener?.remove()
+        }
     
     init() {
         self.userID = ""
     }
-
     
-    func addLog(_ log: ExerciseLog) {
-        do {
-            let docData = try FirestoreEncoder().encode(log)
-            db.collection("users").document(log.userID).collection("exerciseLogs").addDocument(data: docData) { err in
-                if let err = err {
-                    print("Error adding log: \(err)")
-                } else {
-                    print("Log successfully written!")
-                }
+    func delete(_ log: ExerciseLog) {
+        let docRefPath = db.collection("users").document(log.userID).collection("exerciseLogs").document(log.id.uuidString)
+        print("Attempting to delete document at path: \(docRefPath.path)")
+        docRefPath.delete { err in
+            if let err = err {
+                print("Error removing log: \(err)")
+            } else {
+                print("Log successfully removed!")
             }
-        } catch {
-            print("Error encoding log: \(error)")
         }
     }
 
 
 
-//    private func saveLog(_ log: ExerciseLog) {
-//        do {
-//            let _ = try db.collection("exerciseLogs").addDocument(data: log.data)
-//        } catch let error {
-//            print("Error writing log to Firestore: \(error)")
-//        }
-//    }
-
-    func fetchLogs(forUserID userID: String) {
-        db.collection("users").document(userID).collection("exerciseLogs").getDocuments { (querySnapshot, error) in
+    
+    func listenForChanges() {
+        listener = db.collection("users").document(userID).collection("exerciseLogs").addSnapshotListener { (querySnapshot, error) in
             if let error = error {
                 print("Error getting logs: \(error)")
             } else {
@@ -99,18 +99,89 @@ class ExerciseLogViewModel: ObservableObject {
                     let minutes = data["minutes"] as? Int ?? 0
                     let weight = data["weight"] as? Int ?? 0
                     
+                    // Get the ID from the document's ID
+                    let id = UUID(uuidString: document.documentID) ?? UUID()
+                    
                     return ExerciseLog(
+                        id: id,  // <-- Add this line
                         exercise: exercise,
                         date: date,
                         minutes: minutes,
                         weight: weight,
                         userID: data["userID"] as? String ?? ""
                     )
-
                 } ?? []
             }
         }
     }
+
+
+    func fetchLogs(forUserID userID: String) {
+        // Do nothing. The logs will be fetched by the snapshot listener.
+    }
+
+
+
+
+
+    
+    func addLog(_ log: ExerciseLog) {
+        do {
+            let docData = try FirestoreEncoder().encode(log)
+            db.collection("users").document(log.userID).collection("exerciseLogs").document(log.id.uuidString).setData(docData) { err in
+                if let err = err {
+                    print("Error adding log: \(err)")
+                } else {
+                    print("Log successfully written!")
+                }
+            }
+        } catch {
+            print("Error encoding log: \(error)")
+        }
+    }
+
+
+
+
+//    private func saveLog(_ log: ExerciseLog) {
+//        do {
+//            let _ = try db.collection("exerciseLogs").addDocument(data: log.data)
+//        } catch let error {
+//            print("Error writing log to Firestore: \(error)")
+//        }
+//    }
+
+//    func fetchLogs(forUserID userID: String) {
+//        db.collection("users").document(userID).collection("exerciseLogs").getDocuments { (querySnapshot, error) in
+//            if let error = error {
+//                print("Error getting logs: \(error)")
+//            } else {
+//                self.logs = querySnapshot?.documents.compactMap { document in
+//                    let data = document.data()
+//                    let exercise = Exercise(
+//                        name: data["exerciseName"] as? String ?? "",
+//                        type: data["exerciseType"] as? String ?? "",
+//                        muscle: data["exerciseMuscle"] as? String ?? "",
+//                        equipment: data["exerciseEquipment"] as? String ?? "",
+//                        difficulty: data["exerciseDifficulty"] as? String ?? "",
+//                        instructions: data["exerciseInstructions"] as? String ?? ""
+//                    )
+//                    let date = data["date"] as? Date ?? Date()
+//                    let minutes = data["minutes"] as? Int ?? 0
+//                    let weight = data["weight"] as? Int ?? 0
+//
+//                    return ExerciseLog(
+//                        exercise: exercise,
+//                        date: date,
+//                        minutes: minutes,
+//                        weight: weight,
+//                        userID: data["userID"] as? String ?? ""
+//                    )
+//
+//                } ?? []
+//            }
+//        }
+//    }
     
     struct FirestoreEncoder {
         func encode<T: Encodable>(_ value: T) throws -> [String: Any] {

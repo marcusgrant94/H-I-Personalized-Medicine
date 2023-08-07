@@ -44,7 +44,7 @@ struct AddExerciseDetailedView: View {
         .navigationTitle(exercise.name)
         .navigationBarItems(trailing: Button(action: {
                     if let minutesInt = Int(minutes), let weightInt = Int(weight) {
-                        let newLog = ExerciseLog(exercise: exercise, date: date, minutes: minutesInt, weight: weightInt, userID: Auth.auth().currentUser?.uid ?? "")
+                        let newLog = ExerciseLog(id: UUID(), exercise: exercise, date: date, minutes: minutesInt, weight: weightInt, userID: Auth.auth().currentUser?.uid ?? "")
                         logViewModel.addLog(newLog)
                         showingAlert = true
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
