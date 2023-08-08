@@ -49,6 +49,13 @@ class ExerciseLogViewModel: ObservableObject {
 //            fetchLogs(forUserID: userID)
         }
     }
+    
+    // Manually defined exercises
+       let exercises = [
+           Exercise(name: "Dumbbell Bench Press", type: "strength", muscle: "chest", equipment: "dumbbell", difficulty: "intermediate", instructions: "Lie down on a flat bench..."),
+           Exercise(name: "Squats", type: "strength", muscle: "legs", equipment: "barbell", difficulty: "intermediate", instructions: "Stand with feet shoulder-width apart..."),
+           // Add more exercises here
+       ]
 
     init(userID: String) {
         self.userID = userID
@@ -87,7 +94,11 @@ class ExerciseLogViewModel: ObservableObject {
             } else {
                 self.logs = querySnapshot?.documents.compactMap { document in
                     let data = document.data()
+                    
+                    let exerciseID = UUID()
+                    
                     let exercise = Exercise(
+//                        id: exerciseID,
                         name: data["exerciseName"] as? String ?? "",
                         type: data["exerciseType"] as? String ?? "",
                         muscle: data["exerciseMuscle"] as? String ?? "",

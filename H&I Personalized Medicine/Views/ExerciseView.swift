@@ -26,42 +26,62 @@ struct ExerciseView: View {
     }
     
     var body: some View {
-        VStack {
-            Divider()
+        VStack(spacing: 20) {
             Text("Logs")
+                .font(.title)
                 .bold()
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                .padding()
+                .padding([.top, .horizontal])
+                .frame(maxWidth: .infinity, alignment: .leading)
             
             List {
                 ForEach(logViewModel.logs.indices, id: \.self) { index in
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .leading, spacing: 10) {
                         Text(logViewModel.logs[index].exercise.name)
-//                        Text("Hello World")
-                            .font(.subheadline)
+                            .font(.headline)
+                            .padding(.vertical, 5)
+                        
                         Text("Date: \(dateFormatter.string(from: logViewModel.logs[index].date))")
                             .font(.subheadline)
+//                            .foregroundColor(.secondary)
+                        
                         Text("Minutes: \(logViewModel.logs[index].minutes)")
                             .font(.subheadline)
+//                            .foregroundColor(.secondary)
+                        
                         Text("Weight: \(logViewModel.logs[index].weight)")
                             .font(.footnote)
+//                            .foregroundColor(.gray)
                     }
+                    .padding(.vertical, 10)
                 }
                 .onDelete(perform: deleteItem)
             }
             
             NavigationLink(destination: AddExerciseView(logViewModel: logViewModel)) {
-                Text("+ Add Exercise")
+                HStack {
+                    Image(systemName: "plus") // Adds a plus icon from SF Symbols
+                        .foregroundColor(.white)
+                    Text("Add Exercise")
+                        .foregroundColor(.white)
+                }
+                .padding()
+                .background(Color.blue)  // You can choose your desired color
+                .cornerRadius(10)
             }
-            .padding()
-            Divider()
-            Spacer()
+            .padding([.bottom, .horizontal])
         }
         .navigationTitle("Exercise")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             logViewModel.userID = userID
-////            logViewModel.fetchLogs(forUserID: userID)
+            printLogs()
+        }
+    }
+    
+    
+    private func printLogs() {
+        logViewModel.logs.forEach { log in
+            print("Exercise: \(log.exercise)")
         }
     }
 
@@ -72,6 +92,7 @@ struct ExerciseView: View {
             logViewModel.delete(log)
         }
     }
+    
 
 }
 
