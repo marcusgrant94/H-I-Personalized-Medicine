@@ -73,16 +73,25 @@ class ExerciseLogViewModel: ObservableObject {
     }
     
     func delete(_ log: ExerciseLog) {
+        guard let index = logs.firstIndex(where: { $0.id == log.id }) else { return }
         let docRefPath = db.collection("users").document(log.userID).collection("exerciseLogs").document(log.id.uuidString)
-        print("Attempting to delete document at path: \(docRefPath.path)")
         docRefPath.delete { err in
             if let err = err {
                 print("Error removing log: \(err)")
             } else {
                 print("Log successfully removed!")
+                DispatchQueue.main.async {
+                    if index < self.logs.count {
+                        self.logs.remove(at: index) // Remove log from local array
+                    }
+                }
             }
         }
     }
+
+
+
+
 
 
 
@@ -149,6 +158,11 @@ class ExerciseLogViewModel: ObservableObject {
         } catch {
             print("Error encoding log: \(error)")
         }
+    }
+
+    func updateUserID(_ userID: String) {
+        self.userID = userID
+        // Fetch logs or any other necessary action
     }
 
 

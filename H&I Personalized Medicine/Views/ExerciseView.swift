@@ -73,9 +73,10 @@ struct ExerciseView: View {
         .navigationTitle("Exercise")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
-            logViewModel.userID = userID
+            logViewModel.updateUserID(userID)
             printLogs()
         }
+
     }
     
     
@@ -92,6 +93,8 @@ struct ExerciseView: View {
             logViewModel.delete(log)
         }
     }
+
+
     
 
 }
